@@ -1,0 +1,50 @@
+{
+  "name": "Vinícius Gabriel de Sousa Soares",
+  "headline": "IA Engineer | Desenvolvedor Full Stack | Professor",
+  "email": "viniciulaika98@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/gabrielvinicius8/",
+  "github": "https://github.com/vnzin-rb",
+  "summary": "Profissional de tecnologia com atuação em Engenharia de IA, desenvolvimento Full Stack e ensino de Desenvolvimento de Sistemas. Tecnólogo em Análise e Desenvolvimento de Sistemas pelo IFPI, com pesquisa acadêmica em RAG e GraphRAG. Foco em Python, APIs, agentes de IA e grafos de conhecimento, conectando desenvolvimento de software, recuperação de informação e aprendizado prático.",
+  "experience": [
+    {
+      "role": "IA Engineer e Desenvolvedor Full Stack",
+      "organization": "CoCreate IA",
+      "period": "Setembro de 2026 - atual",
+      "bullets": [
+        "Atuação em engenharia de inteligência artificial e desenvolvimento de aplicações Full Stack.",
+        "Foco técnico em agentes de IA, grafos de conhecimento e integração de aplicações."
+      ]
+    },
+    {
+      "role": "Professor de Desenvolvimento de Sistemas",
+      "organization": "CETI Dermeval Lobão | Professor seletista",
+      "period": "Fevereiro de 2025 - atual",
+      "bullets": [
+        "Ensino de programação, banco de dados, orientação a objetos e desenvolvimento de APIs.",
+        "Abordagem prática de desenvolvimento de sistemas, incluindo Flutter e Dart."
+      ]
+    }
+  ],
+  "skills": [
+    {"label": "IA e recuperação de informação", "text": "Python, RAG, GraphRAG, agentes de IA, Google ADK, Gemini, LangChain e FAISS."},
+    {"label": "Backend e dados", "text": "FastAPI, APIs REST, SQL, SQLite, Neo4j, Cypher, grafos de conhecimento e ontologias."},
+    {"label": "Desenvolvimento e ferramentas", "text": "Flutter, Dart, programação orientada a objetos, Git e GitHub."}
+  ],
+  "projects": [
+    {
+      "title": "Enterprise AI GraphRAG Agent",
+      "context": "Projeto demonstrativo de suporte empresarial",
+      "description": "Agente que conecta clientes, contratos, equipamentos e políticas em um grafo de conhecimento para apoiar consultas com múltiplas relações. Stack: Python, FastAPI, Google ADK, Neo4j, Cypher e SQLite.",
+      "url": "https://github.com/vnzin-rb/enterprise-ai-graphrag-agent"
+    },
+    {
+      "title": "GraphRAG aplicado a uma IA conversacional para redução de alucinações",
+      "context": "Trabalho de Conclusão de Curso | IFPI | Defesa: 28/07/2026",
+      "description": "Comparação entre RAG tradicional e GraphRAG, com análise de aderência às fontes, rastreabilidade e respostas não fundamentadas. Tecnologias: Python, Gemini, Google ADK, FAISS, LangChain e Neo4j."
+    }
+  ],
+  "education": [
+    {"title": "Tecnólogo em Análise e Desenvolvimento de Sistemas", "organization": "Instituto Federal do Piauí (IFPI)", "period": "Fevereiro de 2024 - julho de 2026"},
+    {"title": "Técnico em Informática", "organization": "Instituto Federal do Piauí (IFPI)", "period": "Janeiro de 2021 - dezembro de 2023"}
+  ]
+}
