@@ -1,0 +1,64 @@
+/* Retrato circular e halo: a foto original permanece intacta. */
+.hero-visual .portrait-frame{width:340px;height:340px;border-radius:50%;border:3px solid #83fff6aa;box-shadow:0 0 0 8px #00e4df08,0 0 42px #00e4df25,0 25px 60px #0008;isolation:isolate}
+.hero-visual .portrait-frame img{object-position:50% 41%;filter:saturate(.8) contrast(1.02)}
+.hero-visual .portrait-shade{background:linear-gradient(0deg,#031013c7,transparent 33%)}
+.hero-visual .portrait-mark{left:50%;bottom:22px;transform:translateX(-50%);font-size:10px;white-space:nowrap}
+.hero-visual .portrait-caption{margin-top:40px;position:relative}
+.portrait-ring{position:absolute;width:386px;height:386px;left:50%;top:50%;transform:translate(-50%,calc(-50% - 28px));border:1px solid #00e4df2b;border-radius:50%;pointer-events:none}
+.portrait-ring:before{content:'';position:absolute;inset:-11px;border:1px dashed #1bc9d33a;border-radius:50%}
+.portrait-ring:after{content:'';position:absolute;inset:-2px;border:2px solid transparent;border-top-color:#6efff1;border-right-color:#00e4df2b;border-radius:50%;animation:portrait-orbit 24s linear infinite;filter:drop-shadow(0 0 6px #00e4df8c)}
+.motion-paused .portrait-ring:after{animation-play-state:paused}
+@keyframes portrait-orbit{to{transform:rotate(360deg)}}
+.about-cv{display:flex;align-items:center;gap:35px;margin-top:32px}.about-cv a:first-child{color:var(--cyan)}
+.skill-applications{margin-top:30px;border-top:1px solid var(--line)}
+.skill-applications details{border-bottom:1px solid var(--line)}
+.skill-applications summary{list-style:none;display:flex;align-items:center;gap:18px;padding:20px 0;font-size:14px;cursor:pointer;color:#c8dadd}
+.skill-applications summary::-webkit-details-marker{display:none}
+.skill-applications summary>span:first-child{font:9px var(--mono);color:var(--cyan)}
+.skill-applications .details-sign{margin-left:auto;color:var(--cyan);font-size:21px;line-height:1;transition:transform .2s}
+.skill-applications details[open] .details-sign{transform:rotate(45deg)}
+.skill-applications details>div{padding:0 36px 24px;max-width:850px}
+.skill-applications p{font-size:13px;line-height:1.9;color:var(--muted);margin:0 0 15px}
+.skill-applications button.text-link{padding:0;border:0}
+.project-links{display:flex;align-items:center;gap:24px;margin-top:25px;flex-wrap:wrap}
+.project-links .text-link{margin:0}
+.project-detail-button{border:1px solid #2b4e58;border-radius:4px;padding:9px 14px;font-size:12px;line-height:1.5;color:#b9d9df;transition:border-color .2s,color .2s}
+.project-detail-button:hover{border-color:var(--cyan);color:var(--cyan)}
+.project-secondary .project-links{gap:20px}
+.contact-email{margin-top:27px}.contact-email>span{font:9px var(--mono);letter-spacing:1.3px;color:#6e99a4;display:block;margin-bottom:9px}
+.contact-email>a{font-family:var(--display);font-size:20px;letter-spacing:-.3px;color:#d7eef1;overflow-wrap:anywhere}
+.contact-email>a>span{color:var(--cyan);margin-left:10px}
+.contact-email>a:hover{color:var(--cyan)}
+.contact-options{flex-shrink:0;display:flex;flex-direction:column;align-items:stretch;gap:15px}
+.contact-secondary{display:flex;align-items:center;justify-content:space-between;font-size:12px;color:#86a3ae;padding:0 4px}
+.contact-secondary span{font-size:17px;color:var(--cyan)}
+.contact-secondary:hover{color:var(--cyan)}
+.floating-top{position:fixed;right:25px;bottom:25px;z-index:15;width:40px;height:40px;border:1px solid #368b91;border-radius:9px;display:grid;place-items:center;color:var(--cyan);background:#081b20ed;backdrop-filter:blur(12px);box-shadow:0 5px 20px #0005;font-size:21px}
+.floating-top:hover{background:#103039;border-color:var(--cyan)}.floating-top[hidden]{display:none}
+.project-dialog{color:var(--text);background:#091419;border:1px solid #2b6169;border-radius:14px;width:min(640px,calc(100% - 40px));max-height:calc(100dvh - 60px);padding:30px;box-shadow:0 30px 100px #0009;overflow-y:auto;overscroll-behavior:contain}
+.project-dialog::backdrop{background:#000b;backdrop-filter:blur(7px)}
+body.dialog-open{overflow:hidden}.dialog-top{display:flex;justify-content:space-between;align-items:center;gap:20px}.dialog-top .eyebrow{font-size:9px;letter-spacing:1.4px}
+.dialog-close{border:1px solid #2c4852;border-radius:50%;width:34px;height:34px;flex-shrink:0;padding:0;font-size:23px;line-height:1;color:#9ebac5;display:grid;place-items:center}
+.dialog-close:hover{color:var(--cyan);border-color:var(--cyan)}
+.project-dialog h2{font:500 31px/1.2 var(--display);letter-spacing:-1px;margin:25px 0 18px}
+.dialog-summary{font-size:14px;color:#b1c8d0;margin:0 0 27px;line-height:1.85}
+.dialog-section{margin:22px 0}.dialog-section h3{font:500 11px var(--mono);letter-spacing:.5px;color:var(--cyan);margin:0 0 10px}
+.dialog-section p{font-size:13px;color:var(--muted);margin:0;line-height:1.9}.project-dialog>.button{margin-top:10px}
+@media(min-width:801px){
+  .timeline{max-width:1060px;margin-inline:auto}
+  .timeline-item{display:grid;grid-template-columns:1fr 1fr;column-gap:90px;padding-bottom:60px;align-items:start}
+  .timeline-item:before{left:50%;top:10px;bottom:-10px}
+  .timeline-dot{left:calc(50% - 4px);top:8px}
+  .timeline-content{grid-column:2;grid-row:1;padding:0}
+  .timeline-date{grid-column:1;grid-row:1;text-align:right;padding-top:4px;color:#a8c2cc}
+  .timeline-content h3{font-size:23px}
+  .timeline-item.timeline-left .timeline-content{grid-column:1;text-align:right}
+  .timeline-item.timeline-left .timeline-date{grid-column:2;text-align:left}
+  .timeline-item.timeline-left .timeline-type{justify-content:flex-end}
+  .timeline-content .timeline-exact{font-size:9px}
+}
+@media(min-width:1600px){.hero-visual .portrait-frame{width:370px;height:370px}.portrait-ring{width:420px;height:420px}}
+@media(max-width:1100px){.hero-visual .portrait-frame{width:290px;height:290px}.portrait-ring{width:333px;height:333px}.timeline-content .current-badge{font-size:7px}.project-info .project-links{gap:17px}}
+@media(max-width:800px){.hero-visual .portrait-frame{width:265px;height:265px}.portrait-ring{width:305px;height:305px;transform:translate(-50%,calc(-50% - 27px))}.hero-visual{min-height:400px}.hero-visual .portrait-caption{margin-top:33px}.contact-options{align-items:flex-start;margin-top:32px;gap:15px}.contact-options .contact-button{margin-top:0}.contact-options .contact-secondary{width:270px}.about-cv{gap:25px}.about-cv .text-link{font-size:11px;gap:10px}.skill-applications summary{font-size:13px;gap:14px}.skill-applications details>div{padding-left:30px;padding-right:5px}.floating-top{right:18px;bottom:18px;width:36px;height:36px}.project-dialog{padding:24px}.project-dialog h2{font-size:27px}.contact-email>a{font-size:19px}}
+@media(max-width:440px){.hero-visual .portrait-frame{width:240px;height:240px}.portrait-ring{width:278px;height:278px}.hero-visual{min-height:365px}.hero-visual .portrait-caption{font-size:7px;letter-spacing:1.5px;margin-top:30px}.about-cv{flex-direction:column;align-items:flex-start;gap:15px}.skill-applications summary{font-size:12px}.skill-applications p{font-size:12px}.project-dialog{padding:22px;width:calc(100% - 28px);max-height:calc(100dvh - 36px)}.project-dialog h2{font-size:25px}.dialog-top .eyebrow{font-size:8px;letter-spacing:.8px}.dialog-summary{font-size:13px}.project-links{gap:17px}.project-detail-button{font-size:11px}.contact-email>a{font-size:17px}}
+@media(prefers-reduced-motion:reduce){.portrait-ring:after{animation:none}}
